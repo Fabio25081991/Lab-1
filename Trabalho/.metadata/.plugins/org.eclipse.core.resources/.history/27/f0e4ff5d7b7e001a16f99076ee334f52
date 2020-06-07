@@ -1,0 +1,48 @@
+package br.edu.univas.main;
+import java.util.Scanner;
+public class Trabalho1 {
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		int opcao,operacao,x,y,z;
+		do {
+			System.out.println("Escolha a operação que vai utilizar");
+			System.out.println("Para somar coloque 1");
+			System.out.println("Para subtrair coloque 2");
+			System.out.println("Para multiplicar coloque 3");
+			System.out.println("Para dividir coloque 4");
+			System.out.println("Para sair coloque 9");
+			do {
+				operacao=ler.nextInt();
+				
+				if (operacao==9) {
+					System.out.println("Saindo...");
+					break;
+				} else if(operacao<1 || operacao>4) {
+					System.out.println("Opção invalida... Digite novamente");
+				}
+			} while(operacao<1 || operacao>4);
+			if(operacao==1) {
+				System.out.println("Você escolheu somar");
+				do {
+					System.out.println("De um primeiro valor:");
+					x=ler.nextInt();
+					System.out.println("Agora quanto será somado a ele:");
+					y=ler.nextInt();
+					z=x+y
+					System.out.println("O resultado dessa soma é: "+z);
+					System.out.println("Para tentar com outros valores digite 1");
+					System.out.println("Para tentar com outros operadores digite 8");
+					System.out.println("Para sair digite 9");
+					opcao=ler.nextInt();
+					if (opcao==1) {
+						
+					} else if (opcao==9) {
+						System.out.println("Saindo...");
+						break
+					} else if (opcao!=8) {
+						System.out.println("Opção invalida... digite novamente");
+					}
+				} while(opcao==8)
+		}
+	}
+}

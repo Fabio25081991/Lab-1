@@ -1,0 +1,21 @@
+package br.edu.univas.main;
+import java.util.Scanner;
+public class Trabalho1 {
+	public static voidmain(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		int operacao;
+		System.out.println("Escolha a operação que vai utilizar");
+		System.out.println("Para somar coloque 1");
+		System.out.println("Para subtrair coloque 2");
+		System.out.println("Para multiplicar coloque 3");
+		System.out.println("Para dividir coloque 4");
+		System.out.println("Para sair coloque 9");
+		do {
+			operacao=ler.nextInt();
+			
+			if (operacao==1 || operacao==2 || operacao==3 || operacao==4 || operacao==9) {
+				
+			}
+		} while(true)
+	}
+}
